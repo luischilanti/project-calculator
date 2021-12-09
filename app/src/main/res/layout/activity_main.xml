@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#575757"
+        android:onClick="historyButton"
+        android:text="@string/history"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnClear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiply" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="clearButton"
+        android:text="@string/clear"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHistory"
+        app:layout_constraintTop_toTopOf="@+id/btnHistory" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFAD34"
+        android:onClick="btnDivide"
+        android:text="@string/divide"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnThree"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinus"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#FFAD34"
+        android:onClick="btnEqual"
+        android:text="@string/equal"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnComma"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnComma"
+        app:layout_constraintTop_toTopOf="@+id/btnComma"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#FFAD34"
+        android:onClick="btnMultiply"
+        android:text="@string/multiply"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEqual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEqual"
+        app:layout_constraintTop_toTopOf="@+id/btnEqual"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFAD34"
+        android:onClick="btnMinus"
+        android:text="@string/minus"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSix"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnFour"
+        android:text="@string/four"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFive"
+        app:layout_constraintEnd_toStartOf="@+id/btnFive"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnFive" />
+
+    <Button
+        android:id="@+id/btnFive"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnFive"
+        android:text="@string/five"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSix"
+        app:layout_constraintEnd_toStartOf="@+id/btnSix"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFour"
+        app:layout_constraintTop_toTopOf="@+id/btnSix" />
+
+    <Button
+        android:id="@+id/btnSix"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnSix"
+        android:text="@string/six"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMinus"
+        app:layout_constraintEnd_toStartOf="@+id/btnMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFive"
+        app:layout_constraintTop_toTopOf="@+id/btnMinus" />
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnOne"
+        android:text="@string/one"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTwo"
+        app:layout_constraintEnd_toStartOf="@+id/btnTwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTwo" />
+
+    <Button
+        android:id="@+id/btnZero"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnZero"
+        android:text="@string/zero"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnComma"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDivide" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnTwo"
+        android:text="@string/two"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnThree"
+        app:layout_constraintEnd_toStartOf="@+id/btnThree"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnOne"
+        app:layout_constraintTop_toTopOf="@+id/btnThree" />
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnThree"
+        android:text="@string/three"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDivide"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTwo"
+        app:layout_constraintTop_toTopOf="@+id/btnDivide" />
+
+    <Button
+        android:id="@+id/btnComma"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnComma"
+        android:text="@string/comma"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZero"
+        app:layout_constraintEnd_toStartOf="@+id/btnEqual"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnZero"
+        app:layout_constraintTop_toTopOf="@+id/btnZero" />
+
+    <Button
+        android:id="@+id/btnNine"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnNine"
+        android:text="@string/nine"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEight"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEight"
+        app:layout_constraintTop_toTopOf="@+id/btnEight" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#FFAD34"
+        android:onClick="btnPlus"
+        android:text="@string/plus"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnNine"
+        app:layout_constraintTop_toTopOf="@+id/btnNine"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtDisplay"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="false"
+        android:inputType="none"
+        android:text="@string/display"
+        android:textAlignment="textEnd"
+        android:textColor="#575757"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSeven"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnSeven"
+        android:text="@string/seven"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplay" />
+
+    <Button
+        android:id="@+id/btnEight"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#575757"
+        android:onClick="btnEight"
+        android:text="@string/eight"
+        android:textSize="25sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSeven"
+        app:layout_constraintEnd_toStartOf="@+id/btnNine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSeven"
+        app:layout_constraintTop_toTopOf="@+id/btnSeven" />
+</androidx.constraintlayout.widget.ConstraintLayout>
